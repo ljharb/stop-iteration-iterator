@@ -35,7 +35,7 @@
 	},
 	"homepage": "https://github.com/ljharb/stop-iteration-iterator#readme",
 	"dependencies": {
-		"internal-slot": "^1.0.4"
+		"internal-slot": "^1.0.7"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.1",

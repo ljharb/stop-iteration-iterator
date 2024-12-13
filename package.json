@@ -13,6 +13,7 @@
 		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"prepublishOnly": "safe-publish-latest",
 		"lint": "eslint --ext=js,mjs .",
+		"postlint": "tsc && attw -P",
 		"pretest": "npm run lint",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"test": "npm run tests-only",
@@ -40,7 +41,10 @@
 		"internal-slot": "^1.1.0"
 	},
 	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.17.1",
 		"@ljharb/eslint-config": "^21.1.1",
+		"@ljharb/tsconfig": "^0.2.2",
+		"@types/tape": "^5.6.5",
 		"auto-changelog": "^2.5.0",
 		"encoding": "^0.1.13",
 		"eslint": "=8.8.0",
@@ -48,7 +52,8 @@
 		"npmignore": "^0.3.1",
 		"nyc": "^10.3.2",
 		"safe-publish-latest": "^2.0.0",
-		"tape": "^5.9.0"
+		"tape": "^5.9.0",
+		"typescript": "next"
 	},
 	"engines": {
 		"node": ">= 0.4"

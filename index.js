@@ -1,8 +1,8 @@
 'use strict';
 
 var SLOT = require('internal-slot');
+var $SyntaxError = require('es-errors/syntax');
 
-var $SyntaxError = SyntaxError;
 var $StopIteration = typeof StopIteration === 'object' ? StopIteration : null;
 
 module.exports = function getStopIterationIterator(origIterator) {

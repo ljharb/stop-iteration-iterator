@@ -1,6 +1,6 @@
 {
 	"name": "stop-iteration-iterator",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Firefox 17-26 iterators throw a StopIteration object to indicate \"done\". This normalizes it.",
 	"main": "index.js",
 	"exports": {
